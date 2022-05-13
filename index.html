@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>BIU PORTAL</title>
+</head>
+<body>
+    <section class="side">
+        <img src="./images/biu.png" alt="">
+    </section>
+
+    <section class="main">
+        <div class="login-container">
+            <p class="title">BIU PORTAL</p>
+            <div class="separator"></div>
+            <p class="welcome-message">Please, provide Matriculation number to proceed</p>
+
+            <div class="container">
+               
+                <form method="post" action="https://www.biuportal.net/LogIn.aspx" id="loginForm" requiressl="true" autocomplete="on">
+              <div class="aspNetHidden">
+              <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTMzNDU1NzA1D2QWAgIDDxYCHgxhdXRvY29tcGxldGUFA29mZmRkUqof2LAdE4XaTKVxV+vLr66d+Qk=" />
+              </div>
+              
+              <div class="aspNetHidden">
+              
+                  <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+                  <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARd9vtBLyjpHiBYSoOme+1hY3plgk0YBAefRz3MyBlTcHY2+Mc6SrnAqio3oCKbxYainihG6d/Xh3PZm3b5AoMQ9QuH9fLNL5w33RiP/YoinnH+MVI=" />
+              </div>
+                <div class="errorMessages"><span id="lblErrorMessage"></span></div>
+                  
+                  <form class="login-form">
+                    <div class="form-control">
+                       <input type="text" placeholder="Matric no" name="txtUserName" id="txtUserName" tabindex="1" class="text">
+                       <i class="fas fa-user"></i>
+                   </div>
+                  
+                  
+                   <div class="form-control">
+                    <input type="password" placeholder="Password"  name="txtPassword" id="txtPassword" tabindex="2" class="text" autocomplete="off">
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                  
+                  <label></label>
+                  <button type="submit" name="btnLogin" value="Login" id="btnLogin" class="submit">Login</button> 
+                  <div class="newStudentLink"><a href="NewEntry.html"> New Student? Click here to sign up</a></div>
+                </form>
+               
+              </div>
+        </div>
+    </section>
+    
+</body>
+</html>
